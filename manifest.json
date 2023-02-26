@@ -1,0 +1,13 @@
+{ 
+    "name": "Dictionary extension",
+    "version" : "0.0.1",
+    "manifest_version": 2,
+    "description" : "This is a simple dictionary extension which searches instantly for a word while you are surfing the browser",
+    "browser_action":{
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "activeTab"
+    ]
+
+}
