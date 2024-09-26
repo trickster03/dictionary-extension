@@ -6,7 +6,7 @@ document.querySelector("form").addEventListener("submit",async(event)=>{
  const app_id = "54104854"
 const language = "en-gb"
 const word_id = document.querySelector("#word").value;
-console.log(word_id)
+console.log(word_id);
 
 
 
@@ -23,7 +23,8 @@ console.log(word_id)
 fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word_id}`)
 .then(response => response.json())
 //.then(response => console.log(response))
-.then(response => alert(JSON.stringify(response[0].meanings[0].definitions[0])))
+
+.then(response => (alert(JSON.stringify(response[0].meanings[0].definitions[0].definition))))
 
 .catch(err => console.error(err));
 
